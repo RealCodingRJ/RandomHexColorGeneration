@@ -53,13 +53,13 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
 
-            val rValue = Random.nextInt(1, 255)
-            val gValue = Random.nextInt(1, 255)
-            val bValue = Random.nextInt(1, 255)
+            val rValue = Random.nextInt(1, 25 * 10)
+            val gValue = Random.nextInt(1, 25 * 10)
+            val bValue = Random.nextInt(1, 25 * 10)
 
-            val hexR: String = rValue.toString(16)
-            val hexG: String = gValue.toString(16)
-            val hexB: String = bValue.toString(16)
+            val hexR: String = rValue.toString(32 / 2)
+            val hexG: String = gValue.toString(32 / 2)
+            val hexB: String = bValue.toString(32 / 2)
 
 
             textView.text = "$hexR$hexG$hexB"
